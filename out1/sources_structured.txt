@@ -1,0 +1,418 @@
+################################################################
+# ARCHIVE STRUCTURÉE DES FICHIERS
+# Générée le: 2026-05-24 10:32:41
+# Source: /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue
+# Destination: /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/out1
+################################################################
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: backend/app.js
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/backend/app.js
+║ Taille : 0 octets
+║ Date   : 2026-05-24 10:27:27
+╚══════════════════════════════════════════════════════════╝
+
+[FICHIER BINAIRE - contenu ignoré]
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: backend/core/BaseController.js
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/backend/core/BaseController.js
+║ Taille : 0 octets
+║ Date   : 2026-05-24 10:30:42
+╚══════════════════════════════════════════════════════════╝
+
+[FICHIER BINAIRE - contenu ignoré]
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: backend/core/BaseRepository.js
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/backend/core/BaseRepository.js
+║ Taille : 0 octets
+║ Date   : 2026-05-24 10:30:48
+╚══════════════════════════════════════════════════════════╝
+
+[FICHIER BINAIRE - contenu ignoré]
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: backend/core/EntityLoader.js
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/backend/core/EntityLoader.js
+║ Taille : 0 octets
+║ Date   : 2026-05-24 10:31:15
+╚══════════════════════════════════════════════════════════╝
+
+[FICHIER BINAIRE - contenu ignoré]
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: backend/core/GrudGenerator.js
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/backend/core/GrudGenerator.js
+║ Taille : 0 octets
+║ Date   : 2026-05-24 10:30:59
+╚══════════════════════════════════════════════════════════╝
+
+[FICHIER BINAIRE - contenu ignoré]
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: backend/core/RouteGenrator.js
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/backend/core/RouteGenrator.js
+║ Taille : 0 octets
+║ Date   : 2026-05-24 10:31:07
+╚══════════════════════════════════════════════════════════╝
+
+[FICHIER BINAIRE - contenu ignoré]
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: /README.MD
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/README.MD
+║ Taille : 147 octets
+║ Date   : 2026-05-24 10:26:08
+╚══════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONTENU :
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+     1	+ [X] create repository
+     2	+ [ ] choose structure for my project 
+     3	    + [ ] techno    
+     4	        - [ ] nodejs
+     5	        - [ ] express
+     6	        - [ ] vue.js
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+╔══════════════════════════════════════════════════════════╗
+║ FICHIER: /send.sh
+║ Chemin : /home/andrianandrainy/Documents/S4/Mr Tahina/Framework-javascript-generaliser-vue/send.sh
+║ Taille : 8911 octets
+║ Date   : 2026-05-24 10:32:25
+╚══════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONTENU :
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+     1	#!/bin/bash
+     2	
+     3	# =========================================================
+     4	# DEPLOY + ARCHIVAGE INTELLIGENT
+     5	# =========================================================
+     6	
+     7	# Définir le chemin absolu du script
+     8	SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+     9	
+    10	echo "=============================================="
+    11	echo "   COPIE COMPLÈTE + ARCHIVAGE INTELLIGENT"
+    12	echo "=============================================="
+    13	echo "Script exécuté depuis : $SCRIPT_DIR"
+    14	echo ""
+    15	
+    16	# =========================================================
+    17	# OPTIONS
+    18	# =========================================================
+    19	
+    20	read -p "Entrez le répertoire source [Entrée = '$SCRIPT_DIR']: " source_dir
+    21	read -p "Entrez le répertoire destination [Entrée = '$SCRIPT_DIR/out1']: " dest_dir
+    22	
+    23	# Valeurs par défaut
+    24	source_dir="${source_dir:-$SCRIPT_DIR}"
+    25	dest_dir="${dest_dir:-$SCRIPT_DIR/out1}"
+    26	
+    27	# Chemins absolus
+    28	source_dir=$(realpath -e "$source_dir" 2>/dev/null || echo "$source_dir")
+    29	dest_dir=$(realpath -m "$dest_dir")
+    30	
+    31	# =========================================================
+    32	# VÉRIFICATION
+    33	# =========================================================
+    34	
+    35	if [ ! -d "$source_dir" ]; then
+    36	    echo "❌ Répertoire source introuvable : $source_dir"
+    37	    exit 1
+    38	fi
+    39	
+    40	echo ""
+    41	echo "📁 Source      : $source_dir"
+    42	echo "📁 Destination : $dest_dir"
+    43	echo "📄 Copie       : Tous les fichiers sauf *.jar"
+    44	echo "📝 Archive     : sources_structured.txt"
+    45	echo "🚫 Exclusions  :"
+    46	echo "    - .git/"
+    47	echo "    - *.class"
+    48	echo "    - out/"
+    49	echo "    - build/"
+    50	echo "    - target/"
+    51	echo ""
+    52	
+    53	read -p "Continuer ? (o/n) " -n 1 -r
+    54	echo ""
+    55	
+    56	if [[ ! $REPLY =~ ^[Oo]$ ]]; then
+    57	    echo "❌ Annulé."
+    58	    exit 0
+    59	fi
+    60	
+    61	# =========================================================
+    62	# CRÉATION DOSSIER DESTINATION
+    63	# =========================================================
+    64	
+    65	mkdir -p "$dest_dir"
+    66	
+    67	# =========================================================
+    68	# ARCHIVE
+    69	# =========================================================
+    70	
+    71	ARCHIVE_FILE="$SCRIPT_DIR/sources_structured.txt"
+    72	TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+    73	
+    74	cat > "$ARCHIVE_FILE" <<EOF
+    75	################################################################
+    76	# ARCHIVE STRUCTURÉE DES FICHIERS
+    77	# Générée le: $TIMESTAMP
+    78	# Source: $source_dir
+    79	# Destination: $dest_dir
+    80	################################################################
+    81	
+    82	EOF
+    83	
+    84	# =========================================================
+    85	# FONCTION ARCHIVAGE
+    86	# =========================================================
+    87	
+    88	format_file_for_archive() {
+    89	
+    90	    local file="$1"
+    91	    local rel_path="$2"
+    92	
+    93	    local filename=$(basename "$file")
+    94	    local extension="${filename##*.}"
+    95	
+    96	    {
+    97	        echo "╔══════════════════════════════════════════════════════════╗"
+    98	        echo "║ FICHIER: $rel_path/$filename"
+    99	        echo "║ Chemin : $file"
+   100	        echo "║ Taille : $(stat -c%s "$file" 2>/dev/null) octets"
+   101	        echo "║ Date   : $(stat -c%y "$file" 2>/dev/null | cut -d'.' -f1)"
+   102	        echo "╚══════════════════════════════════════════════════════════╝"
+   103	        echo ""
+   104	    } >> "$ARCHIVE_FILE"
+   105	
+   106	    # =====================================================
+   107	    # CAS JAR
+   108	    # =====================================================
+   109	
+   110	    if [[ "$extension" == "jar" ]]; then
+   111	
+   112	        {
+   113	            echo "[FICHIER JAR DÉTECTÉ]"
+   114	            echo "Nom uniquement enregistré."
+   115	            echo ""
+   116	            echo ""
+   117	        } >> "$ARCHIVE_FILE"
+   118	
+   119	        return
+   120	    fi
+   121	
+   122	    # =====================================================
+   123	    # FICHIER TEXTE
+   124	    # =====================================================
+   125	
+   126	    if file "$file" | grep -qi "text"; then
+   127	
+   128	        {
+   129	            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+   130	            echo "CONTENU :"
+   131	            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+   132	            echo ""
+   133	        } >> "$ARCHIVE_FILE"
+   134	
+   135	        cat -n "$file" >> "$ARCHIVE_FILE" 2>/dev/null \
+   136	        || echo "[Impossible de lire le contenu]" >> "$ARCHIVE_FILE"
+   137	
+   138	        {
+   139	            echo ""
+   140	            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+   141	            echo ""
+   142	            echo ""
+   143	        } >> "$ARCHIVE_FILE"
+   144	
+   145	    else
+   146	
+   147	        echo "[FICHIER BINAIRE - contenu ignoré]" >> "$ARCHIVE_FILE"
+   148	        echo "" >> "$ARCHIVE_FILE"
+   149	
+   150	    fi
+   151	}
+   152	
+   153	echo ""
+   154	echo "🔄 Traitement des fichiers..."
+   155	echo ""
+   156	
+   157	# =========================================================
+   158	# COMPTEURS
+   159	# =========================================================
+   160	
+   161	total_files=0
+   162	copied_count=0
+   163	jar_skipped=0
+   164	archived_count=0
+   165	error_count=0
+   166	
+   167	# =========================================================
+   168	# FIND AVEC EXCLUSIONS
+   169	# =========================================================
+   170	
+   171	while IFS= read -r file; do
+   172	
+   173	    ((total_files++))
+   174	
+   175	    filename=$(basename "$file")
+   176	    extension="${filename##*.}"
+   177	
+   178	    # chemin relatif
+   179	    rel_path=$(dirname "${file#$source_dir/}")
+   180	
+   181	    if [ "$rel_path" = "." ]; then
+   182	        rel_path=""
+   183	    fi
+   184	
+   185	    mkdir -p "$dest_dir/$rel_path"
+   186	
+   187	    # =====================================================
+   188	    # CAS .jar
+   189	    # =====================================================
+   190	
+   191	    if [[ "$extension" == "jar" ]]; then
+   192	
+   193	        echo "  🚫 JAR ignoré : $filename"
+   194	
+   195	        format_file_for_archive "$file" "$rel_path"
+   196	
+   197	        ((jar_skipped++))
+   198	        ((archived_count++))
+   199	
+   200	        continue
+   201	    fi
+   202	
+   203	    # =====================================================
+   204	    # COPIE
+   205	    # =====================================================
+   206	
+   207	    if cp "$file" "$dest_dir/$rel_path/" 2>/dev/null; then
+   208	
+   209	        echo "  ✓ Copié : $filename"
+   210	
+   211	        ((copied_count++))
+   212	
+   213	        format_file_for_archive "$file" "$rel_path"
+   214	
+   215	        ((archived_count++))
+   216	
+   217	    else
+   218	
+   219	        echo "  ✗ Erreur : $filename"
+   220	
+   221	        ((error_count++))
+   222	
+   223	    fi
+   224	
+   225	done < <(
+   226	
+   227	    find "$source_dir" \
+   228	        \( \
+   229	            -path "*/.git/*" \
+   230	            -o -path "*/out/*" \
+   231	            -o -path "*/build/*" \
+   232	            -o -path "*/target/*" \
+   233	            -o -path "$dest_dir/*" \
+   234	            -o -name "*.class" \
+   235	        \) -prune \
+   236	        -o -type f -print | sort
+   237	
+   238	)
+   239	
+   240	# =========================================================
+   241	# RÉSUMÉ
+   242	# =========================================================
+   243	
+   244	echo ""
+   245	echo "=============================================="
+   246	echo "RÉSUMÉ"
+   247	echo "=============================================="
+   248	
+   249	echo "📊 Total fichiers traités : $total_files"
+   250	echo "✅ Fichiers copiés        : $copied_count"
+   251	echo "🚫 JAR ignorés            : $jar_skipped"
+   252	echo "📝 Fichiers archivés      : $archived_count"
+   253	echo "❌ Erreurs                : $error_count"
+   254	
+   255	echo ""
+   256	echo "📁 Destination : $dest_dir"
+   257	echo "📄 Archive     : $ARCHIVE_FILE"
+   258	
+   259	# =========================================================
+   260	# STATISTIQUES EXTENSIONS
+   261	# =========================================================
+   262	
+   263	echo ""
+   264	echo "📋 Statistiques extensions"
+   265	echo "--------------------------------------------"
+   266	
+   267	declare -A ext_count
+   268	
+   269	while IFS= read -r file; do
+   270	
+   271	    ext="${file##*.}"
+   272	
+   273	    if [ "$ext" = "$file" ]; then
+   274	        ext="sans-extension"
+   275	    fi
+   276	
+   277	    ((ext_count[$ext]++))
+   278	
+   279	done < <(
+   280	
+   281	    find "$source_dir" \
+   282	        \( \
+   283	            -path "*/.git/*" \
+   284	            -o -path "*/out/*" \
+   285	            -o -path "*/build/*" \
+   286	            -o -path "*/target/*" \
+   287	            -o -path "$dest_dir/*" \
+   288	            -o -name "*.class" \
+   289	        \) -prune \
+   290	        -o -type f -print
+   291	
+   292	)
+   293	
+   294	printf "%-20s | %s\n" "Extension" "Nombre"
+   295	printf "%-20s-+-%s\n" "--------------------" "--------"
+   296	
+   297	for ext in "${!ext_count[@]}"; do
+   298	    printf "%-20s | %d\n" "$ext" "${ext_count[$ext]}"
+   299	done | sort
+   300	
+   301	echo ""
+   302	echo "🎉 Terminé."
+   303	echo ""
+   304	
+   305	# =========================================================
+   306	# APERÇU
+   307	# =========================================================
+   308	
+   309	if [ -f "$ARCHIVE_FILE" ]; then
+   310	
+   311	    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+   312	    echo "📖 Aperçu archive"
+   313	    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+   314	
+   315	    head -50 "$ARCHIVE_FILE"
+   316	
+   317	    echo "..."
+   318	    echo ""
+   319	
+   320	    echo "📏 Taille : $(du -h "$ARCHIVE_FILE" | cut -f1)"
+   321	    echo "📄 Lignes : $(wc -l < "$ARCHIVE_FILE")"
+   322	
+   323	fi
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
